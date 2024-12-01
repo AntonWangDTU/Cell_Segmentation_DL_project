@@ -1,10 +1,16 @@
 from cellpose import io, models, train
 io.logger_setup()
 
-output = io.load_train_test_data(train_dir = '/zhome/1a/4/136247/blackhole/Cell_Segmentation_DL_project/Anton/train',
-                                 test_dir = '/zhome/1a/4/136247/blackhole/Cell_Segmentation_DL_project/Anton/test' ,
-                                 image_filter="_img",
-                                mask_filter="_masks", look_one_level_down=False)
+
+
+
+
+
+
+output = io.load_train_test_data(train_dir = '/dtu/blackhole/17/136247/Cell_Segmentation_DL_project/data/groundtruth_train',
+                                 test_dir = '/dtu/blackhole/17/136247/Cell_Segmentation_DL_project/data/groundtruth_test' ,
+                                 image_filter='_img',
+                                mask_filter='_seg.npy', look_one_level_down=False)
 images, labels, image_names, test_images, test_labels, image_names_test = output
 
 # e.g. retrain a Cellpose model

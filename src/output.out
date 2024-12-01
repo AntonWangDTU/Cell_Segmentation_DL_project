@@ -1,0 +1,36 @@
+2024-12-01 13:01:53,450 [INFO] WRITING LOG OUTPUT TO /zhome/1a/4/136247/.cellpose/run.log
+2024-12-01 13:01:53,450 [INFO] 
+cellpose version: 	3.1.0 
+platform:       	linux 
+python version: 	3.10.15 
+torch version:  	2.5.1
+2024-12-01 13:01:53,458 [INFO] not all flows are present, running flow generation for all images
+2024-12-01 13:01:53,665 [INFO] 40 / 41 images in /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/data/groundtruth_train folder have labels
+2024-12-01 13:01:53,669 [INFO] not all flows are present, running flow generation for all images
+2024-12-01 13:01:53,714 [INFO] 9 / 10 images in /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/data/groundtruth_test folder have labels
+2024-12-01 13:01:53,714 [INFO] >> cyto3 << model set to be used
+2024-12-01 13:01:53,715 [INFO] >>>> using CPU
+2024-12-01 13:01:53,715 [INFO] >>>> using CPU
+2024-12-01 13:01:53,789 [INFO] >>>> loading model /zhome/1a/4/136247/.cellpose/models/cyto3
+2024-12-01 13:01:53,914 [INFO] >>>> model diam_mean =  30.000 (ROIs rescaled to this size during training)
+2024-12-01 13:01:53,914 [INFO] computing flows for labels
+2024-12-01 13:01:56,592 [INFO] computing flows for labels
+2024-12-01 13:01:57,116 [INFO] >>> computing diameters
+2024-12-01 13:01:57,176 [WARNING] 1 train images with number of masks less than min_train_masks (5), removing from train set
+2024-12-01 13:01:57,177 [INFO] >>> using channels [0, 0]
+2024-12-01 13:01:57,177 [INFO] >>> normalizing {'lowhigh': None, 'percentile': None, 'normalize': True, 'norm3D': True, 'sharpen_radius': 0, 'smooth_radius': 0, 'tile_norm_blocksize': 0, 'tile_norm_smooth3D': 1, 'invert': False}
+2024-12-01 13:01:57,614 [INFO] >>> n_epochs=100, n_train=39, n_test=9
+2024-12-01 13:01:57,614 [INFO] >>> SGD, learning_rate=0.10000, weight_decay=0.00010, momentum=0.900
+2024-12-01 13:01:58,913 [INFO] >>> saving model to /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/models/my_new_model
+2024-12-01 13:03:16,813 [INFO] 0, train_loss=0.4273, test_loss=1.1566, LR=0.000000, time 77.90s
+2024-12-01 13:09:23,145 [INFO] 5, train_loss=0.3038, test_loss=0.1940, LR=0.055556, time 444.23s
+2024-12-01 13:15:28,246 [INFO] 10, train_loss=0.2667, test_loss=0.1834, LR=0.100000, time 809.33s
+2024-12-01 13:27:33,412 [INFO] 20, train_loss=0.2319, test_loss=0.1842, LR=0.100000, time 1534.50s
+2024-12-01 13:39:37,244 [INFO] 30, train_loss=0.2216, test_loss=0.1746, LR=0.100000, time 2258.33s
+2024-12-01 13:51:40,877 [INFO] 40, train_loss=0.2215, test_loss=0.1716, LR=0.100000, time 2981.96s
+2024-12-01 14:03:44,100 [INFO] 50, train_loss=0.1976, test_loss=0.1703, LR=0.100000, time 3705.19s
+2024-12-01 14:15:47,040 [INFO] 60, train_loss=0.2063, test_loss=0.1727, LR=0.100000, time 4428.13s
+2024-12-01 14:27:49,399 [INFO] 70, train_loss=0.2083, test_loss=0.1678, LR=0.100000, time 5150.49s
+2024-12-01 14:39:52,904 [INFO] 80, train_loss=0.2036, test_loss=0.1693, LR=0.100000, time 5873.99s
+2024-12-01 14:51:55,713 [INFO] 90, train_loss=0.1994, test_loss=0.1669, LR=0.100000, time 6596.80s
+2024-12-01 15:02:43,905 [INFO] saving network parameters to /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/models/my_new_model
