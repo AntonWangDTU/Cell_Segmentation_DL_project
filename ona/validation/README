@@ -1,0 +1,2 @@
+# using only png files
+python -m cellpose --dir png_for_prediction/ --pretrained_model cyto3 --chan 0 --save_png --verbose
