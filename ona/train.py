@@ -9,7 +9,7 @@ output = io.load_train_test_data(train_dir = "/zhome/c9/0/203261/blackhole/DL_pr
 images, labels, image_names, test_images, test_labels, image_names_test = output
 
 # e.g. retrain a Cellpose model
-model = models.CellposeModel(model_type="cyto3")
+model = models.CellposeModel(model_type=None)
 
 model_path, train_losses, test_losses = train.train_seg(model.net,
                             train_data=images, train_labels=labels,
