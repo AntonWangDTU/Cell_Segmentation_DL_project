@@ -5,3 +5,4 @@ Anton/
 data/
 notebooks/how_to_use_jupyter_gpu.txt
 notebooks/performance_metrics_retrained.ipynb
+validation/
