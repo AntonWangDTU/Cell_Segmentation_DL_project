@@ -27,11 +27,13 @@
 #BSUB -o Output_%J.out 
 #BSUB -e Output_%J.err 
 
-# here follow the commands you want to execute with input.in as the input file
-
 source /dtu/blackhole/17/136247/miniconda3/etc/profile.d/conda.sh
-
 conda activate cellpose
 
-python3 /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/train.py \
-> /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/output.out
+# retraining script
+python3 /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/retraining.py \
+    > /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/output_retraining.out
+
+# fine-tuning script
+python3 /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/fine_tuning.py \
+    > /dtu/blackhole/17/136247/Cell_Segmentation_DL_project/src/fine_tuning.out
