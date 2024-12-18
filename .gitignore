@@ -1,5 +1,7 @@
-ona/
+/zhome/c9/0/203261/blackhole/DL_project/Cell_Segmentation_DL_project/ona/
 test/
 train/
 Anton/
 data/
+notebooks/how_to_use_jupyter_gpu.txt
+notebooks/performance_metrics_retrained.ipynb
