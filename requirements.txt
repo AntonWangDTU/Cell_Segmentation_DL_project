@@ -1,0 +1,8 @@
+
+
+The best way to get started with using cellpose is by reading the documentations:
+
+https://cellpose.readthedocs.io/en/latest/
+
+
+
